@@ -1,2 +1,2 @@
-# adserver
-Ad server
+# Ad server
+Implementation of an advertisement server
