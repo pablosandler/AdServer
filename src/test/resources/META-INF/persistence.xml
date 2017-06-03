@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+    <persistence-unit name="entityManager" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <!--<exclude-unlisted-classes>false</exclude-unlisted-classes>-->
+        <class>com.mycompany.adserver.entities.Advertising</class>
+        <class>com.mycompany.adserver.entities.AdvertisingCampaign</class>
+        <class>com.mycompany.adserver.entities.AdvertisingSpace</class>
+        <class>com.mycompany.adserver.entities.CampaignRestriction</class>
+        <class>com.mycompany.adserver.entities.Image</class>
+        <properties>
+            <!--<property name="hibernate.archive.autodetection" value="class, hbm"/>-->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.max_fetch_depth" value="4" />
+            <property name="hibernate.use_sql_comments" value="true" />
+            <property name="hibernate.jdbc.wrap_result_sets" value="false" />
+            <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+        </properties>
+
+
+    </persistence-unit>
+</persistence>
